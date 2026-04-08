@@ -1,0 +1,138 @@
+import { Dumbbell, Flame, Timer, Heart, Trophy, Zap } from "lucide-react";
+
+export const workouts = [
+  {
+    id: 1, slug: "full-body-blast", title: "Full Body Blast", category: "Strength", duration: "45 min", level: "Intermediate", calories: "450", icon: Dumbbell,
+    description: "Complete full-body workout targeting all major muscle groups with compound movements.",
+    longDescription: "This comprehensive full-body workout hits every major muscle group through strategic compound movements. Perfect for building overall strength and muscle definition.",
+    equipment: ["Barbell", "Dumbbells", "Bench", "Pull-up Bar"],
+    targetMuscles: ["Chest", "Back", "Shoulders", "Legs", "Core"],
+    exercises: [
+      { name: "Barbell Squat", sets: 4, reps: "8-10", rest: "90s", notes: "Keep chest up, go below parallel" },
+      { name: "Bench Press", sets: 4, reps: "8-10", rest: "90s", notes: "Control the negative, full range of motion" },
+      { name: "Bent-Over Row", sets: 3, reps: "10-12", rest: "60s", notes: "Squeeze shoulder blades at top" },
+      { name: "Overhead Press", sets: 3, reps: "8-10", rest: "60s", notes: "Brace core, no leg drive" },
+      { name: "Romanian Deadlift", sets: 3, reps: "10-12", rest: "60s", notes: "Hinge at hips, slight knee bend" },
+      { name: "Pull-Ups", sets: 3, reps: "8-12", rest: "60s", notes: "Full extension at bottom" },
+      { name: "Plank Hold", sets: 3, reps: "45s", rest: "30s", notes: "Keep hips level, engage core" },
+    ],
+  },
+  {
+    id: 2, slug: "hiit-inferno", title: "HIIT Inferno", category: "HIIT", duration: "30 min", level: "Advanced", calories: "500", icon: Flame,
+    description: "High-intensity intervals designed for maximum calorie burn and cardiovascular improvement.",
+    longDescription: "Prepare to sweat with this high-intensity interval training session. Alternating between explosive movements and brief recovery periods.",
+    equipment: ["Bodyweight", "Jump Rope", "Kettlebell"],
+    targetMuscles: ["Full Body", "Cardiovascular System"],
+    exercises: [
+      { name: "Burpees", sets: 4, reps: "30s work / 15s rest", rest: "—" },
+      { name: "Mountain Climbers", sets: 4, reps: "30s work / 15s rest", rest: "—" },
+      { name: "Kettlebell Swings", sets: 4, reps: "30s work / 15s rest", rest: "—" },
+      { name: "Jump Squats", sets: 4, reps: "30s work / 15s rest", rest: "—" },
+      { name: "Box Jumps", sets: 3, reps: "30s work / 15s rest", rest: "—" },
+      { name: "Battle Ropes", sets: 3, reps: "30s work / 15s rest", rest: "—" },
+    ],
+  },
+  {
+    id: 3, slug: "cardio-endurance", title: "Cardio Endurance", category: "Cardio", duration: "40 min", level: "Beginner", calories: "350", icon: Timer,
+    description: "Build your cardiovascular base with progressive endurance training sessions.",
+    longDescription: "A structured cardio session designed to progressively build your aerobic capacity.",
+    equipment: ["Treadmill or Open Space", "Timer"],
+    targetMuscles: ["Heart", "Legs", "Lungs"],
+    exercises: [
+      { name: "Warm-Up Walk", sets: 1, reps: "5 min", rest: "—" },
+      { name: "Light Jog", sets: 1, reps: "10 min", rest: "—" },
+      { name: "Tempo Run", sets: 3, reps: "3 min fast / 2 min easy", rest: "—" },
+      { name: "Hill Walk/Incline", sets: 1, reps: "5 min", rest: "—" },
+      { name: "Cool-Down Walk", sets: 1, reps: "5 min", rest: "—" },
+    ],
+  },
+  {
+    id: 4, slug: "yoga-flow", title: "Yoga Flow", category: "Flexibility", duration: "35 min", level: "Beginner", calories: "200", icon: Heart,
+    description: "Improve flexibility and mindfulness with guided yoga flow sequences.",
+    longDescription: "A calming vinyasa-style flow that links breath to movement.",
+    equipment: ["Yoga Mat", "Yoga Block (optional)"],
+    targetMuscles: ["Full Body", "Hip Flexors", "Spine", "Shoulders"],
+    exercises: [
+      { name: "Sun Salutation A", sets: 3, reps: "5 breaths each", rest: "—" },
+      { name: "Warrior I → II Flow", sets: 2, reps: "5 breaths per side", rest: "—" },
+      { name: "Triangle Pose", sets: 2, reps: "5 breaths per side", rest: "—" },
+      { name: "Pigeon Pose", sets: 1, reps: "10 breaths per side", rest: "—" },
+      { name: "Seated Forward Fold", sets: 1, reps: "10 breaths", rest: "—" },
+      { name: "Savasana", sets: 1, reps: "5 min", rest: "—" },
+    ],
+  },
+  {
+    id: 5, slug: "recovery-stretch", title: "Recovery Stretch", category: "Recovery", duration: "20 min", level: "Beginner", calories: "100", icon: Heart,
+    description: "Active recovery session with foam rolling and deep stretching protocols.",
+    longDescription: "Essential recovery work to reduce soreness, improve mobility, and prevent injury.",
+    equipment: ["Foam Roller", "Yoga Mat", "Lacrosse Ball (optional)"],
+    targetMuscles: ["IT Band", "Quads", "Hamstrings", "Back", "Shoulders"],
+    exercises: [
+      { name: "Foam Roll Quads", sets: 1, reps: "60s per leg", rest: "—" },
+      { name: "Foam Roll IT Band", sets: 1, reps: "60s per leg", rest: "—" },
+      { name: "Foam Roll Upper Back", sets: 1, reps: "90s", rest: "—" },
+      { name: "Hip Flexor Stretch", sets: 2, reps: "45s per side", rest: "—" },
+      { name: "Chest Doorway Stretch", sets: 2, reps: "30s per side", rest: "—" },
+      { name: "Child's Pose", sets: 1, reps: "60s", rest: "—" },
+    ],
+  },
+  {
+    id: 6, slug: "power-lifting", title: "Power Lifting", category: "Strength", duration: "60 min", level: "Advanced", calories: "600", icon: Trophy,
+    description: "Heavy compound lifts focusing on squat, bench, and deadlift progressions.",
+    longDescription: "A serious strength session built around the Big Three lifts with progressive overload.",
+    equipment: ["Barbell", "Power Rack", "Bench", "Weight Plates", "Belt"],
+    targetMuscles: ["Quads", "Glutes", "Chest", "Back", "Hamstrings"],
+    exercises: [
+      { name: "Back Squat", sets: 5, reps: "5", rest: "3 min" },
+      { name: "Bench Press", sets: 5, reps: "5", rest: "3 min" },
+      { name: "Conventional Deadlift", sets: 5, reps: "3", rest: "3 min" },
+      { name: "Barbell Row", sets: 3, reps: "8", rest: "90s" },
+      { name: "Dips", sets: 3, reps: "10-12", rest: "60s" },
+    ],
+  },
+  {
+    id: 7, slug: "tabata-express", title: "Tabata Express", category: "HIIT", duration: "20 min", level: "Intermediate", calories: "400", icon: Zap,
+    description: "Quick but brutal Tabata-style intervals — 20 seconds on, 10 seconds rest.",
+    longDescription: "The classic Tabata protocol: 20 seconds all-out, 10 seconds rest, repeated 8 times.",
+    equipment: ["Bodyweight", "Timer"],
+    targetMuscles: ["Full Body", "Cardiovascular System"],
+    exercises: [
+      { name: "Jump Squats", sets: 8, reps: "20s on / 10s off", rest: "1 min after block" },
+      { name: "Push-Ups", sets: 8, reps: "20s on / 10s off", rest: "1 min after block" },
+      { name: "High Knees", sets: 8, reps: "20s on / 10s off", rest: "1 min after block" },
+      { name: "Plank Jacks", sets: 8, reps: "20s on / 10s off", rest: "—" },
+    ],
+  },
+  {
+    id: 8, slug: "morning-mobility", title: "Morning Mobility", category: "Flexibility", duration: "15 min", level: "Beginner", calories: "80", icon: Heart,
+    description: "Start your day right with joint mobility work and dynamic stretching.",
+    longDescription: "A gentle morning routine to wake up your body and improve daily movement quality.",
+    equipment: ["Yoga Mat"],
+    targetMuscles: ["Hips", "Shoulders", "Thoracic Spine", "Ankles"],
+    exercises: [
+      { name: "Cat-Cow", sets: 2, reps: "10 reps", rest: "—" },
+      { name: "World's Greatest Stretch", sets: 2, reps: "5 per side", rest: "—" },
+      { name: "Hip Circles", sets: 2, reps: "10 per direction", rest: "—" },
+      { name: "Shoulder Dislocates", sets: 2, reps: "10", rest: "—" },
+      { name: "Ankle Circles", sets: 1, reps: "10 per foot per direction", rest: "—" },
+    ],
+  },
+  {
+    id: 9, slug: "sprint-intervals", title: "Sprint Intervals", category: "Cardio", duration: "25 min", level: "Advanced", calories: "480", icon: Flame,
+    description: "Explosive sprint training for speed, power, and anaerobic capacity.",
+    longDescription: "Explosive sprint work to develop raw speed, power output, and anaerobic capacity.",
+    equipment: ["Track or Treadmill", "Timer"],
+    targetMuscles: ["Glutes", "Hamstrings", "Quads", "Calves", "Core"],
+    exercises: [
+      { name: "Dynamic Warm-Up", sets: 1, reps: "5 min", rest: "—" },
+      { name: "Build-Up Sprints", sets: 3, reps: "60m at 70-80%", rest: "60s walk back" },
+      { name: "Max Effort Sprints", sets: 6, reps: "100m at 95%", rest: "2 min walk" },
+      { name: "Tempo Runs", sets: 3, reps: "200m at 80%", rest: "90s" },
+      { name: "Cool-Down Jog", sets: 1, reps: "5 min", rest: "—" },
+    ],
+  },
+];
+
+export function getWorkoutBySlug(slug) {
+  return workouts.find((w) => w.slug === slug);
+}
