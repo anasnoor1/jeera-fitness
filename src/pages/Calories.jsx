@@ -5,7 +5,7 @@ import { Calculator, Flame, ArrowRight, Activity, Target, Utensils } from "lucid
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SectionHeading from "../components/SectionHeading";
-
+   
 const activityLevels = [
   { value: 1.2, label: "Sedentary", description: "Little or no exercise" },
   { value: 1.375, label: "Light", description: "1-3 days/week" },
@@ -13,7 +13,7 @@ const activityLevels = [
   { value: 1.725, label: "Active", description: "6-7 days/week" },
   { value: 1.9, label: "Very Active", description: "Intense + physical job" },
 ];
-
+   
 const goals = [
   { value: -500, label: "Lose Weight", description: "~0.5 kg/week", icon: "🔥" },
   { value: 0, label: "Maintain", description: "Keep current", icon: "⚖️" },
@@ -30,7 +30,7 @@ export default function Calories() {
   const [goal, setGoal] = useState(0);
   const [unit, setUnit] = useState("metric");
   const [result, setResult] = useState(null);
-
+   
   const calculate = () => {
     const a = parseFloat(age);
     let h = parseFloat(height);
@@ -45,7 +45,7 @@ export default function Calories() {
     const carbs = Math.max(Math.round((target - protein * 4 - fat * 9) / 4), 50);
     setResult({ bmr: Math.round(bmr), tdee, target, protein, carbs, fat });
   };
-
+    
   return (
     <div style={{ minHeight: "100vh" }}>
       <Navbar />
@@ -113,7 +113,7 @@ export default function Calories() {
               </div>
             </div>
             <button onClick={calculate} className="btn btn-primary btn-full btn-lg"><Calculator size={20} /> Calculate Calories</button>
-
+   
             {result && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1.5rem" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem" }}>

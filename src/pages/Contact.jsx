@@ -15,7 +15,7 @@ export default function Contact() {
     setTimeout(() => { setSubmitted(false); setFormData({ name: "", email: "", subject: "", message: "" }); }, 3000);
   };
   const update = (field) => (e) => setFormData((prev) => ({ ...prev, [field]: e.target.value }));
-
+   
   return (
     <div style={{ minHeight: "100vh" }}>
       <Navbar />

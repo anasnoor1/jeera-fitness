@@ -9,7 +9,7 @@ import PlanCard from "../components/PlanCard";
 import StatBadge from "../components/StatBadge";
 import TestimonialCard from "../components/TestimonialCard";
 import heroImg from "../assets/hero-fitness.jpg";
-
+    
 export default function Home() {
   return (
     <div style={{ minHeight: "100vh" }}>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+   
       {/* Features */}
       <section className="container" style={{ padding: "6rem 1.5rem" }}>
         <SectionHeading badge="Why JeeraFit" title="Everything You Need to" highlight="Crush Your Goals" description="From custom workout plans to macro-optimized meal preps — we've got your entire fitness journey covered." />
@@ -56,7 +56,7 @@ export default function Home() {
           <FeatureCard icon={<Trophy size={24} />} title="Progress Tracking" description="Visual dashboards showing your strength gains, body composition, and milestone achievements." delay={0.5} />
         </div>
       </section>
-
+    
       {/* Workout Plans */}
       <section style={{ backgroundColor: "rgba(25,26,43,0.3)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
         <div className="container" style={{ padding: "6rem 1.5rem" }}>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+   
       {/* Diet Plans */}
       <section className="container" style={{ padding: "6rem 1.5rem" }}>
         <SectionHeading badge="Diet Plans" title="Fuel Your Body" highlight="The Right Way" description="Science-backed nutrition plans customized to your metabolism, food preferences, and fitness goals." />
@@ -84,7 +84,7 @@ export default function Home() {
           <Link to="/diet"><button className="btn btn-outline btn-lg">Explore Diet Plans <ArrowRight size={16} /></button></Link>
         </div>
       </section>
-
+   
       {/* Testimonials */}
       <section style={{ backgroundColor: "rgba(25,26,43,0.3)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
         <div className="container" style={{ padding: "6rem 1.5rem" }}>
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+  
       {/* CTA */}
       <section className="container" style={{ padding: "6rem 1.5rem" }}>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="glow-border" style={{ textAlign: "center", borderRadius: "1.5rem", border: "1px solid rgba(110,231,183,0.2)", backgroundColor: "rgba(110,231,183,0.05)", padding: "4rem" }}>
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
+  
       <Footer />
 
       <style>{`

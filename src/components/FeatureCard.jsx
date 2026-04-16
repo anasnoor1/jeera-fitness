@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+   
 export default function FeatureCard({ icon, title, description, delay = 0 }) {
   return (
     <motion.div

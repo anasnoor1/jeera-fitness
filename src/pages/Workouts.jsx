@@ -6,13 +6,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SectionHeading from "../components/SectionHeading";
 import { workouts } from "../data/workouts";
-
+           
 const categories = ["All", "Strength", "HIIT", "Cardio", "Flexibility", "Recovery"];
-
+         
 export default function Workouts() {
   const [activeCategory, setActiveCategory] = useState("All");
   const filtered = activeCategory === "All" ? workouts : workouts.filter((w) => w.category === activeCategory);
-
+    
   return (
     <div style={{ minHeight: "100vh" }}>
       <Navbar />
@@ -48,7 +48,7 @@ export default function Workouts() {
                     <button className="btn btn-outline btn-full" style={{ fontSize: "0.875rem", fontWeight: 600 }}>View Details <ArrowRight size={16} /></button>
                   </Link>
                 </motion.div>
-              );
+              );        
             })}
           </div>
         </div>

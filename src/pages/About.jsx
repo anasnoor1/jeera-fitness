@@ -12,7 +12,7 @@ const values = [
   { icon: Award, title: "Expert-Backed", description: "Programs designed by certified trainers, nutritionists, and sports scientists." },
   { icon: Lightbulb, title: "Innovation", description: "AI-powered adaptive training that evolves with your progress." },
 ];
-
+    
 const team = [
   { name: "Alex Rivera", role: "Founder & CEO", bio: "Former D1 athlete with 10+ years in sports science." },
   { name: "Dr. Meena Patel", role: "Head of Nutrition", bio: "PhD in Clinical Nutrition, specializing in performance diets." },

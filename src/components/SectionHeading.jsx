@@ -8,7 +8,7 @@ export default function SectionHeading({ badge, title, highlight, description })
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6 }}
       style={{ textAlign: "center", marginBottom: "4rem" }}
-    >
+    >    
       {badge && <span className="badge" style={{ marginBottom: "1.5rem", display: "inline-block" }}>{badge}</span>}
       <h2 style={{ fontSize: "clamp(2rem, 5vw, 3.75rem)", fontWeight: 700, fontFamily: "var(--font-display)", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
         {title}{" "}

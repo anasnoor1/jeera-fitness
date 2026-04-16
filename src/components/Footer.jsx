@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Dumbbell } from "lucide-react";
-
+   
 const linkGroups = [
   { heading: "Product", items: [{ label: "Workouts", to: "/workouts" }, { label: "Diet Plans", to: "/diet" }, { label: "BMI Calculator", to: "/bmi" }] },
   { heading: "Company", items: [{ label: "About", to: "/about" }, { label: "Contact", to: "/contact" }] },
 ];
-
+    
 export default function Footer() {
   return (
     <footer style={{ borderTop: "1px solid var(--border)", backgroundColor: "rgba(28,29,46,0.5)" }}>
@@ -31,7 +31,7 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))}   
         </div>
         <div style={{ marginTop: "3.5rem", paddingTop: "2rem", borderTop: "1px solid var(--border)", textAlign: "center", fontSize: "0.75rem", color: "var(--muted-foreground)" }}>
           © {new Date().getFullYear()} JeeraFit. All rights reserved.

@@ -12,7 +12,7 @@ const navLinks = [
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
-
+   
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
